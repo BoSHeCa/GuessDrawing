@@ -1,0 +1,35 @@
+header{
+
+    background-color: lightblue;
+    margin: 0;
+}
+body{
+    text-align: center;
+    margin: 0;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+.table1{
+    padding: 0 auto;
+    background-color: white;
+}
+.color1{
+    padding-bottom: 5%;
+}
+input[type=number] {
+    width: 6em;
+}

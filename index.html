@@ -14,17 +14,32 @@
 </head>
 
 <body>
+<header>
+    <h1>
+Guess The Drawing Game Page
+    </h1>
+</header>
+
+
+<h2>Choose Size</h2>
+<form id="sizePicker">
+    Grid Height:
+    <input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width:
+    <input type="number" id="inputWidth" name="width" min="1" value="1">
+    <input type="submit">
+</form>
+
+<h2>Choose A Color</h2>
+<input type="color" id="colorPicker">
+
+<h2>Drawing Start..</h2>
+<table id="pixelDraw"></table>
 
 
 
 
-
-
-
-
-    <!-- Javascript Start  -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Javascript Start -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="/assets/js/main.js"></script>
     <!-- Javascript End  -->
 
