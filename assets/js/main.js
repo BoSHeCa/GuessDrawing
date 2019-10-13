@@ -1,3 +1,13 @@
+function buttonGuess() {
+    document.getElementById("demo").innerHTML = "h";
+  }
+
+
+
+
+
+
+
 function makeGrid(height, width) {
     const table = document.getElementById("pixelDraw");
     let grid = '';
@@ -18,33 +28,58 @@ function makeGrid(height, width) {
     addClickEventToCells();
 }
 
-// gets values for height and width from form and uses them to call makrGrid()
+// gets values for height and width from form and uses them to call sizeDraw()
 function formSubmission() {
     event.preventDefault();
-    const height = document.getElementById('inputHeight').value;
-    const width = document.getElementById('inputWidth').value;
+    const height = document.getElementById('drawHeight').value;
+    const width = document.getElementById('drawWidth').value;
     makeGrid(height, width);
 }
 
 // add click events to all cells
 function addClickEventToCells() {
     // on color selection return color:
-    const colorPicker = document.getElementById("colorPicker");
+    const colorDraw = document.getElementById("colorDraw");
     const cells = document.getElementsByClassName('cell');
     for (let i = 0; i < cells.length; i++) {
         cells[i].addEventListener("click", function (event) {
             let clickedCell = event.target;
-            clickedCell.style.backgroundColor = colorPicker.value;
+            clickedCell.style.backgroundColor = colorDraw.value;
         });
     }
 }
 
 
 
-// on submit of form #sizePicker:
-document.getElementById('sizePicker').onsubmit = function () {
+// on submit of form #sizeDraw:
+document.getElementById('sizeDraw').onsubmit = function () {
     formSubmission();
 };
 
 // Build a default 10x10 grid.
-makeGrid(10, 10);
+makeGrid(25, 25);
+
+
+
+// show - hide button
+
+$(function () {
+
+    $('.showButton').click(function ( ) {
+    
+    $('.hidden').show();
+    
+    $('.show').hide();
+    
+    });
+    
+    $('.hideButton').click(function () {
+        $("h3").text("Stop");
+
+    $('.hidden').hide();
+    
+    $('.show').show();
+    
+    });
+    
+    });

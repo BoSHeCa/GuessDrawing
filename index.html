@@ -19,24 +19,29 @@
 Guess The Drawing Game Page
     </h1>
 </header>
+<button onclick="buttonGuess()">cat</button>
+<p id="demo"></p>
+
+
+<div class="hidden">
 
 
 <h2>Choose Size</h2>
-<form id="sizePicker">
-    Grid Height:
-    <input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width:
-    <input type="number" id="inputWidth" name="width" min="1" value="1">
+<form id="sizeDraw">
+    Grid Height: -->
+    <input type="number" id="drawHeight" name="height" min="1" value="1"> Grid Width:
+   <input type="number" id="drawWidth" name="width" min="1" value="1"> 
     <input type="submit">
-</form>
+</form> 
 
-<h2>Choose A Color</h2>
-<input type="color" id="colorPicker">
-
-<h2>Drawing Start..</h2>
+<h4>Choose A Color</h4>
+<input type="color" id="colorDraw">
+</div>
+<h3 id="header" >Drawing Start..</h3>
 <table id="pixelDraw"></table>
 
 
-
+<button class="hideButton hidden">sumbit</button>
 
     <!-- Javascript Start -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

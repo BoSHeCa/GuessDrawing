@@ -23,12 +23,18 @@ tr {
 td {
     width: 20px;
 }
-.table1{
+.pixelDraw{
     padding: 0 auto;
     background-color: white;
 }
-.color1{
-    padding-bottom: 5%;
+h2{
+    padding-top: 5%;
+}
+h3{
+    padding-top: 5%;
+}
+h4{
+    padding-top: 5%;
 }
 input[type=number] {
     width: 6em;
