@@ -1,14 +1,10 @@
 
 
+        
  $(function () {
 
 
     
-    var select1 = document.getElementById("selectValue1").value;
-    console.log(select1);
-    
-    var select2 = document.getElementById("selectValue2").value;
-    console.log(select2);
 
     let isFinish = false
 
@@ -96,7 +92,7 @@ document.getElementById('sizeDraw').onsubmit = function () {
     
         $('.spaceHide').click(function(){
             $("#status").text("Drawing Start ...");
-            // $('.page1').show();
+            $('.page1').show();
             // alert('clicked')
             // makeGrid(height, width);
 
@@ -105,12 +101,27 @@ document.getElementById('sizeDraw').onsubmit = function () {
     });
 
 
-    // function getSelect(){
-    //     var select1 = document.getElementById("#selectValue1").value;
-    //     console.log(select1);
+    function getSelect(){
+
+        var select1 = document.getElementById("selectValue1").value;
+        console.log(select1);
         
-    //         };
-    //         getSelect()
+        var select2 = document.getElementById("selectValue2").value;
+        console.log(select2);
+    
+    
+        if (select1 !== select2) {
+            console.log("bad");
+            alert('bad');
+          } 
+          
+          else 
+          {
+            alert('good');
+          }
+        // var select1 = document.getElementById("selectValue1").value;
+        // console.log(select1);
+            // getSelect()
 
     // function getSelect1()
     // {
@@ -132,12 +143,7 @@ document.getElementById('sizeDraw').onsubmit = function () {
 //         alert("bad") 
 //     }
 //     mattt();
-// if (select1 == select2) {
-//     console.log("good");
-//     alert('good');
-//   } else {
-//     console.log("bad");
-//     alert('bad');
-//   }
 
 
+
+    }

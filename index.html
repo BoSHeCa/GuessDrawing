@@ -26,7 +26,8 @@
 
 
         <p>Please choose what you will draw!</p>
-        <select id="selectValue1" onchange="getSelect1();">
+        <select id="selectValue1" onchange="getSelect()">
+            <option value="">None</option>
             <option value="1">Cat</option>
             <option value="2">Dog</option>
             <option value="3">Rabbit</option>
@@ -42,10 +43,10 @@
         <input class="spaceHide" type="submit">Start draw</input>
 
 
-    <div class="page1">
+    <!-- <div class="page1"> -->
 
-<!-- 
-<section class="finshDraw"> -->
+
+<section class="finshDraw">
         <form id="sizeDraw">
 <!-- Choose Size
         <h2>Choose Size</h2>
@@ -61,15 +62,16 @@
         <input type="color" id="colorDraw">
 
         <h3 id="status">status</h3>
-    <!-- </section> -->
+    </section>
         <table id="pixelDraw"></table>
     </br>
         <button class="finshDraw">Finsh draw</button>
-    </div>
+    <!-- </div> -->
 
 
     <p>Please choose what you Guess draw!</p>
-    <select id="selectValue2" onchange="getSelect2();">
+    <select id="selectValue2" onchange="getSelect();">
+        <option value="">None</option>
         <option value="1">Cat</option>
         <option value="2">Dog</option>
         <option value="3">Rabbit</option>
