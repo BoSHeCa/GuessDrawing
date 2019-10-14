@@ -1,12 +1,16 @@
-function buttonGuess() {
-    document.getElementById("demo").innerHTML = "h";
-  }
 
 
+ $(function () {
 
 
+    
+    var select1 = document.getElementById("selectValue1").value;
+    console.log(select1);
+    
+    var select2 = document.getElementById("selectValue2").value;
+    console.log(select2);
 
-
+    let isFinish = false
 
 function makeGrid(height, width) {
     const table = document.getElementById("pixelDraw");
@@ -33,7 +37,7 @@ function formSubmission() {
     event.preventDefault();
     const height = document.getElementById('drawHeight').value;
     const width = document.getElementById('drawWidth').value;
-    makeGrid(height, width);
+
 }
 
 // add click events to all cells
@@ -42,13 +46,28 @@ function addClickEventToCells() {
     const colorDraw = document.getElementById("colorDraw");
     const cells = document.getElementsByClassName('cell');
     for (let i = 0; i < cells.length; i++) {
+
         cells[i].addEventListener("click", function (event) {
+            if(!isFinish){
             let clickedCell = event.target;
             clickedCell.style.backgroundColor = colorDraw.value;
+        }
+            cells[i].addEventListener("dblclick", function(){ 
+                if(!isFinish){
+                let clickedCell = event.target;
+                clickedCell.style.backgroundColor = "white" ;
+                }
+              });
+           
         });
+        
     }
+
+    
 }
 
+
+    
 
 
 // on submit of form #sizeDraw:
@@ -57,29 +76,68 @@ document.getElementById('sizeDraw').onsubmit = function () {
 };
 
 // Build a default 10x10 grid.
-makeGrid(25, 25);
+
 
 
 
 // show - hide button
 
-$(function () {
+        $('.finshDraw').click(function ( ) {
+            isFinish = true
 
-    $('.showButton').click(function ( ) {
+                $("#status").text("Drawing stop.");
+            
+           
     
-    $('.hidden').show();
+        // $('.space').show();
     
-    $('.show').hide();
-    
+        // $('.space').hide();
     });
     
-    $('.hideButton').click(function () {
-        $("h3").text("Stop");
+        $('.spaceHide').click(function(){
+            $("#status").text("Drawing Start ...");
+            // $('.page1').show();
+            // alert('clicked')
+            // makeGrid(height, width);
 
-    $('.hidden').hide();
-    
-    $('.show').show();
-    
+            makeGrid(25, 25);
+        });
     });
-    
-    });
+
+
+    // function getSelect(){
+    //     var select1 = document.getElementById("#selectValue1").value;
+    //     console.log(select1);
+        
+    //         };
+    //         getSelect()
+
+    // function getSelect1()
+    // {
+
+    // }
+    // getSelect1();
+
+    // function getSelect2()
+    // {
+    //     console.log(select2);
+    // }
+    // getSelect2();
+// function mattt()
+//     if (){
+//         select1 == select2
+//         alert("good")
+//     }else
+//     {
+//         alert("bad") 
+//     }
+//     mattt();
+// if (select1 == select2) {
+//     console.log("good");
+//     alert('good');
+//   } else {
+//     console.log("bad");
+//     alert('bad');
+//   }
+
+
