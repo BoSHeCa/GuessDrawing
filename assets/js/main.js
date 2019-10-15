@@ -3,7 +3,7 @@
         
  $(function () {
 
-
+    $(".colorType").hide();
     
 
     let isFinish = false
@@ -71,7 +71,6 @@ document.getElementById('sizeDraw').onsubmit = function () {
     formSubmission();
 };
 
-// Build a default 10x10 grid.
 
 
 
@@ -81,25 +80,53 @@ document.getElementById('sizeDraw').onsubmit = function () {
         $('.finshDraw').click(function ( ) {
             isFinish = true
 
-                $("#status").text("Drawing stop.");
-            
-           
-    
+                // $("#status").text("Drawing stop.");
         // $('.space').show();
     
         // $('.space').hide();
     });
     
         $('.spaceHide').click(function(){
+            // Build a default 25x25 grid.
+            makeGrid(25, 25);
+            $('.wlecom').hide();
             $("#status").text("Drawing Start ...");
-            $('.page1').show();
+            $('.colorType').show();
+            $('.guess').hide();
+            $('#selectValue2').hide();
+            // $('.colorType').show();
+            // $('.colorType').show();
+
+
+            // $('#status').css("display","block");
+            // $('.chooColor').css("display","block");
+            // $('#colorDraw').css("display","block");
+            // $('.finshDraw').css("display","block");
+            // $('.finshDraw1').css("display","block");
+            // $('#pixelDraw').css("display","block");
+            // $('.guess').css("display","block");
+            // $('.chooColor').css("display","block");
+
+            // $('#colorDraw').css("text-align","center");
+
+
             // alert('clicked')
             // makeGrid(height, width);
 
-            makeGrid(25, 25);
+
         });
     });
+    $('.finshDraw1').click(function(){
+        // isFinish = false
+        $("#status").text("Drawing stop.");
+        $('#colorDraw').hide();
+        $('.chooColor').hide();
+        $('.guess').show();
+        $('.colorType').show();
+        $('#selectValue2').show();
+        $('.finshDraw1').hide();
 
+    });
 
     function getSelect(){
 

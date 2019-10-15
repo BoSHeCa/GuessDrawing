@@ -1,3 +1,9 @@
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 header{
 
     background-color: lightblue;
@@ -43,10 +49,40 @@ h4{
 input[type=number] {
     width: 6em;
 }
-
-.page1{
+/* 
+#selectValue2{
 
     display: none;
 
 }
 
+.spaceHide2,.guess{
+    display: none;
+ 
+}
+
+.finshDraw1{
+
+    display: none;
+
+}
+#pixelDraw{
+    display: none;
+
+}
+
+#colorDraw{
+    display: none;
+    text-align: center;
+
+
+
+}
+#status{
+    display: none;
+
+}    
+.chooColor{
+    display: none;
+
+} */

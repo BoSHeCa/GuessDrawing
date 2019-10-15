@@ -20,14 +20,10 @@
         </h1>
     </header>
 
-
-
-
-
-
+<div class="wlecom">
         <p>Please choose what you will draw!</p>
         <select id="selectValue1" onchange="getSelect()">
-            <option value="">None</option>
+            <option></option>
             <option value="1">Cat</option>
             <option value="2">Dog</option>
             <option value="3">Rabbit</option>
@@ -40,17 +36,16 @@
             <option value="10">Crab</option>
         </select>
         </br>
-        <input class="spaceHide" type="submit">Start draw</input>
+        <button class="spaceHide" type="submit">submit</button>
+    </div>
 
 
-    <!-- <div class="page1"> -->
+<div class="colorType">
 
 
-<section class="finshDraw">
         <form id="sizeDraw">
 <!-- Choose Size
         <h2>Choose Size</h2>
-
     Grid Height: 
     <input type="number" id="drawHeight" name="height" min="1" value="1"> Grid Width:
    <input type="number" id="drawWidth" name="width" min="1" value="1"> 
@@ -58,20 +53,23 @@
      -->
         </form>
 
-        <h4>Choose A Color</h4>
+        <h4 class="chooColor">Choose A Color</h4>
         <input type="color" id="colorDraw">
 
         <h3 id="status">status</h3>
-    </section>
+
         <table id="pixelDraw"></table>
+
     </br>
-        <button class="finshDraw">Finsh draw</button>
-    <!-- </div> -->
+    <section class="finshDraw">  
+        <button class="finshDraw1">Finsh draw</button>
+    </section>
 
 
-    <p>Please choose what you Guess draw!</p>
+
+    <p class="guess">Please choose what you Guess draw!</p>
     <select id="selectValue2" onchange="getSelect();">
-        <option value="">None</option>
+        <option></option>
         <option value="1">Cat</option>
         <option value="2">Dog</option>
         <option value="3">Rabbit</option>
@@ -84,8 +82,9 @@
         <option value="10">Crab</option>
     </select>
     </br>
-    <input class="spaceHide" type="submit">Start draw</input>
-
+    <!-- <button class="spaceHide2" type="submit">submit</button> -->
+</div>
+</div>
 
     <!-- Javascript Start -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
