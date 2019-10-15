@@ -4,6 +4,11 @@
  $(function () {
 
     $(".colorType").hide();
+    $(".gtime1").hide();
+    $("#myBar").hide();
+    $("#myProgress").hide();
+    
+    
     
 
     let isFinish = false
@@ -126,6 +131,10 @@ document.getElementById('sizeDraw').onsubmit = function () {
         $('#selectValue2').show();
         $('.finshDraw1').hide();
 
+        $(".gtime1").show();
+        $("#myBar").show();
+        $("#myProgress").show();
+
     });
 
     function getSelect(){
@@ -138,13 +147,12 @@ document.getElementById('sizeDraw').onsubmit = function () {
     
     
         if (select1 !== select2) {
-            console.log("bad");
-            alert('bad');
+             alert('wrong');
           } 
           
           else 
           {
-            alert('good');
+            alert('successfully');
           }
         // var select1 = document.getElementById("selectValue1").value;
         // console.log(select1);
