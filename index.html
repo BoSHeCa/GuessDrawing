@@ -15,9 +15,9 @@
 
 <body>
     <header>
-        <h1>
+<h5>
             Guess The Drawing Game Page
-        </h1>
+          </h5>
     </header>
 
 <div class="wlecom">
@@ -41,7 +41,7 @@
     <style>
         #myProgress {
           width: 100%;
-          height: 30px;
+          height: 10px;
           position: relative;
           background-color: #ddd;
         }
@@ -49,7 +49,7 @@
         #myBar {
           background-color: #4CAF50;
           width: 10px;
-          height: 30px;
+          height: 10px;
           position: absolute;
         }
         </style>
@@ -111,6 +111,7 @@
         </select>
         </br>
         <h3 id="status">status</h3>
+        <button class="refreshButt" type="submit"  onClick="refreshPage()">Refresh Page</button>
 
         <table id="pixelDraw"></table>
 
@@ -119,7 +120,6 @@
         <button class="finshDraw1"  onclick="move()">Finsh draw</button>
     </section>
   </br>
-  <button type="submit"  onClick="refreshPage()">Refresh Page</button>
 
 
 
