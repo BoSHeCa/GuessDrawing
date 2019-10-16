@@ -3,14 +3,13 @@
 header{
 
     background-color: lightblue;
-    margin: 0;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+    border-bottom: solid;
 }
 body{
     text-align: center;
-    margin: 0;
+    margin: 0; 
 
-
-    
 }
 
 table, tr, td {
@@ -34,52 +33,36 @@ td {
     background-color: white;
 }
 h2{
-    padding-top: 5%;
+    padding-top: 1%;
 }
 h3{
-    padding-top: 5%;
+    padding-top: 1%;
 }
 h4{
-    padding-top: 5%;
+    padding-top: 1%;
 }
 input[type=number] {
     width: 6em;
 }
-/* 
-#selectValue2{
+.guess{
 
-    display: none;
-
-}
-
-.spaceHide2,.guess{
-    display: none;
- 
-}
-
-.finshDraw1{
-
-    display: none;
-
-}
-#pixelDraw{
-    display: none;
+    color: red;
+font-size: 20px;
 
 }
 
-#colorDraw{
-    display: none;
-    text-align: center;
-
-
+option{
+    font-size: 20px;
 
 }
+
+h1{
+    margin-top: 0px;
+padding: 2%;
+}
+
+
 #status{
-    display: none;
 
-}    
-.chooColor{
-    display: none;
-
-} */
-
+    color: blue;
+}

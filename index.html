@@ -55,7 +55,7 @@
         </style>
         <body>
         
-        <h1 class="gtime1"> Time for Guessing ...</h1>
+        <h1 class="gtime1">Guess before time expires...</h1>
         
         <div id="myProgress">
           <div id="myBar"></div>
@@ -68,16 +68,14 @@
         function move() {
           var elem = document.getElementById("myBar");   
           var width = 0;
-          var id = setInterval(frame, 50);
+          var id = setInterval(frame, 100);
           function frame() {
             if (width == 100) {
-                alert('Stop Guessing');
+                alert('You lost! ، Guess time is over');
               clearInterval(id);
             } else {
               width++; 
               elem.style.width = width + '%'; 
-
-
             }
           }
         }
@@ -97,7 +95,21 @@
 
         <h4 class="chooColor">Choose A Color</h4>
         <input type="color" id="colorDraw">
-
+        <p class="guess">Please choose what you Guess draw!</p>
+        <select id="selectValue2" onchange="getSelect()" >
+            <option></option>
+            <option value="1">Cat</option>
+            <option value="2">Dog</option>
+            <option value="3">Rabbit</option>
+            <option value="4">Horse</option>
+            <option value="5">Bee</option>
+            <option value="6">lion</option>
+            <option value="7">Fish</option>
+            <option value="8">Crow</option>
+            <option value="9">Turtle</option>
+            <option value="10">elephant</option>
+        </select>
+        </br>
         <h3 id="status">status</h3>
 
         <table id="pixelDraw"></table>
@@ -109,21 +121,7 @@
 
 
 
-    <p class="guess">Please choose what you Guess draw!</p>
-    <select id="selectValue2" onchange="getSelect()" >
-        <option></option>
-        <option value="1">Cat</option>
-        <option value="2">Dog</option>
-        <option value="3">Rabbit</option>
-        <option value="4">Horse</option>
-        <option value="5">Bee</option>
-        <option value="6">lion</option>
-        <option value="7">Fish</option>
-        <option value="8">Crow</option>
-        <option value="9">Turtle</option>
-        <option value="10">elephant</option>
-    </select>
-    </br>
+
     <!-- <button class="spaceHide2" type="submit">submit</button> -->
 </div>
 </div>
