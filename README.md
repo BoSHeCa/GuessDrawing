@@ -14,6 +14,7 @@ HTML
 CSS
 JavaScript
 jQuery
+sweet alert
 ```
 
 ### Wireframes
@@ -22,25 +23,33 @@ Your step by step planning sketch of your project, that you can post them as an 
 
 ### User Stories
 
-A story of the project user, that explains the use of the project.
+>As a user, I want draw pixel so that creative.
+</br>
+>As a user, I want draw pixal so that funny.
+</br>
+>As a user, I want guess what is draw so that a challenge.
+
+
+
 
 ---
 
 ## Planning and Development Process
 
-A basic story of your planning and developing this project.
+>change list box to button so that easiest to users to Selection
 
 ### Problem-Solving Strategy
 
-What strategy did you use to solve your problems.
+>console.log()
 
 ### Unsolved problems
 
-List unsolved problems which would be fixed in future iterations.
+> Coordinating colors "Design part"
+
 
 ---
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
 * Hat tip to anyone whose code was used
 * Inspiration
@@ -48,4 +57,4 @@ List unsolved problems which would be fixed in future iterations.
 
 ---
 
- ## References
+ ## References -->
