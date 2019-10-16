@@ -181,3 +181,8 @@ document.getElementById('sizeDraw').onsubmit = function () {
 
 
     }
+
+     //refresh button
+ function refreshPage(){
+    window.location.reload();
+}  

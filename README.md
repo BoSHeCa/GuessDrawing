@@ -1,21 +1,19 @@
+
 # GuessDrawing
-SEI - Project One 
-# Project Title
 
-One Paragraph of project description goes here
-
+The idea of the game is to choose the first user what will draw and after the completion of the drawing comes the second user and guess the drawing.
 ## Description
 
-A description of your project. Explain what is the project about and what is the use for it.
+The goal of the game is to entertain, laugh and creativity in drawing and enjoyment, this is done by selecting the first person to draw and after the completion of the drawing comes the second person and guess what drawing during a certain time .
 
 ### Technical Used
 What technologies you used that helped you build this project. 
 
 ```
-Example:
 HTML
 CSS
-JavaScript, and jQuery for DOM manipulation
+JavaScript
+jQuery
 ```
 
 ### Wireframes
