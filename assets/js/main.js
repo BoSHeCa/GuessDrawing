@@ -1,5 +1,5 @@
 
-        
+       let completedRight = false     
  $(function () {
 // hides all thing
     $(".colorType").hide();
@@ -7,7 +7,7 @@
     $("#myBar").hide();
     $("#myProgress").hide();
     
-    
+
     
 
     let isFinish = false
@@ -138,6 +138,10 @@ document.getElementById('sizeDraw').onsubmit = function () {
               clearInterval(id);
 
             }
+            else if(completedRight){
+                elem.style.width = width;
+                clearInterval(id);
+            }
             else {
               width++; 
               elem.style.width = width + '%'; 
@@ -163,9 +167,12 @@ document.getElementById('sizeDraw').onsubmit = function () {
                 showConfirmButton: false,
                 timer: 2500
               })
+
+            //   completedRight = f
           } 
           else 
           {
+ 
             Swal.fire({
                 position: 'center',
                 type: 'success',
@@ -173,6 +180,7 @@ document.getElementById('sizeDraw').onsubmit = function () {
                 showConfirmButton: false,
                 timer: 2500
               })
+              completedRight = true
             // alert('successfully');
 
 
