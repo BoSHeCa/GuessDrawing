@@ -24,9 +24,9 @@ Your step by step planning sketch of your project, that you can post them as an 
 ### User Stories
 
 > As a user, I want draw pixel so that creative.
-<br>
+
 > As a user, I want draw pixal so that funny.
-<br>
+
 > As a user, I want guess what is draw so that a challenge.
 
 
