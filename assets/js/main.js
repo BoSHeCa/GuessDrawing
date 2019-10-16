@@ -91,6 +91,7 @@ document.getElementById('sizeDraw').onsubmit = function () {
     });
     
         $('.spaceHide').click(function(){
+            startClock()
             // Build a default 25x25 grid.
             makeGrid(25, 25);
             $('.wlecom').hide();
@@ -121,6 +122,7 @@ document.getElementById('sizeDraw').onsubmit = function () {
         });
     });
     $('.finshDraw1').click(function(){
+        pauseClock()
         // isFinish = false
         $("#status").text("Drawing stop.");
         $('#colorDraw').hide();
@@ -136,6 +138,23 @@ document.getElementById('sizeDraw').onsubmit = function () {
 
     });
 
+            function move() {
+          var elem = document.getElementById("myBar");   
+          var width = 0;
+          var id = setInterval(frame, 100);
+          function frame() {
+            if (width == 100) {
+                alert('You lost! ، Guess time is over');
+              clearInterval(id);
+
+            }
+            else {
+              width++; 
+              elem.style.width = width + '%'; 
+            }
+          }
+        }
+
     function getSelect(){
 
         var select1 = document.getElementById("selectValue1").value;
@@ -146,12 +165,22 @@ document.getElementById('sizeDraw').onsubmit = function () {
     
     
         if (select1 !== select2) {
-             alert('wrong');
+            //  alert('wrong');
+            Swal.fire({
+                position: 'top-end',
+                type: 'success',
+                title: 'Your work has been saved',
+                showConfirmButton: false,
+                timer: 1500
+              })
           } 
           
           else 
           {
+  
             alert('successfully');
+
+
           }
         // var select1 = document.getElementById("selectValue1").value;
         // console.log(select1);
@@ -179,10 +208,40 @@ document.getElementById('sizeDraw').onsubmit = function () {
 //     mattt();
 
 
-
     }
 
      //refresh button
  function refreshPage(){
     window.location.reload();
 }  
+
+
+
+
+
+
+var timer=document.getElementById('timer');
+var i=0;
+let t;
+function resetClock(){
+i=0;
+timer.innerText="Stop Watch";
+clearInterval(t);
+}
+
+function startClock(){
+t=setInterval(function(){
+timer.innerText=+i
+i++;
+
+},1000)
+
+}
+
+function pauseClock(){
+clearInterval(t);
+
+
+}
+
+function updateTime(){ }

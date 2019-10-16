@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 
     <title>GuessDrawing</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
 </head>
 
 <body>
@@ -64,22 +66,7 @@
         <br>
         <!-- <button onclick="move()">Click Me</button>  -->
         
-        <script>
-        function move() {
-          var elem = document.getElementById("myBar");   
-          var width = 0;
-          var id = setInterval(frame, 100);
-          function frame() {
-            if (width == 100) {
-                alert('You lost! ، Guess time is over');
-              clearInterval(id);
-            } else {
-              width++; 
-              elem.style.width = width + '%'; 
-            }
-          }
-        }
-        </script>
+  
 <div class="colorType">
 
 
@@ -111,6 +98,10 @@
         </select>
         </br>
         <h3 id="status">status</h3>
+
+        <h1 id="timer"></h1>
+
+
         <button class="refreshButt" type="submit"  onClick="refreshPage()">Refresh Page</button>
 
         <table id="pixelDraw"></table>

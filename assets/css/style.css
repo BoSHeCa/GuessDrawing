@@ -89,3 +89,21 @@ h5{
     font-size: 30px;
 
 }
+
+button {
+    background: rgb(212, 104, 54);
+    color: #FFF;
+    font-family: Josefin Slab;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px 5px;
+    border-radius: 2px;
+    box-shadow: 0.1px  black;
+  }
+  
+  button:hover{
+      background: rgb(170, 221, 99);
+  }
+  
