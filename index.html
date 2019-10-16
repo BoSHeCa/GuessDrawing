@@ -23,7 +23,7 @@
     </header>
 
 <div class="wlecom">
-        <p>Please choose what you will draw!</p>
+        <p class="chooseDraw">Please choose what you will draw!</p>
         <select id="selectValue1" >
             <option></option>
             <option value="1">Cat</option>
@@ -37,24 +37,11 @@
             <option value="9">Turtle</option>
             <option value="10">elephant</option>
         </select>
+      </br>
         </br>
         <button class="spaceHide" type="submit">submit</button>
     </div>
-    <style>
-        #myProgress {
-          width: 100%;
-          height: 10px;
-          position: relative;
-          background-color: #ddd;
-        }
-        
-        #myBar {
-          background-color: #4CAF50;
-          width: 10px;
-          height: 10px;
-          position: absolute;
-        }
-        </style>
+
         <body>
         
         <h1 class="gtime1">Guess before time expires...</h1>
@@ -96,15 +83,19 @@
             <option value="9">Turtle</option>
             <option value="10">elephant</option>
         </select>
+
         </br>
+        <div class="timBout">
+          <h1 id="timer"></h1>
+  
+  
+          <button class="refreshButt" type="submit"  onClick="refreshPage()">Refresh Page</button>
+        </div>
         <h3 id="status">status</h3>
 
-        <h1 id="timer"></h1>
-
-
-        <button class="refreshButt" type="submit"  onClick="refreshPage()">Refresh Page</button>
 
         <table id="pixelDraw"></table>
+
 
     </br>
     <section class="finshDraw">  

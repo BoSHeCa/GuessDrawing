@@ -2,16 +2,19 @@
 
 header{
 
-    background-color: lightblue;
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+    /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png); */
+    background: #bed4fad5;
     border-bottom: solid;
 
 }
 body{
     text-align: center;
     margin: 0; 
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+
 
 }
+
 
 table, tr, td {
     border: 1px solid black;
@@ -47,9 +50,14 @@ input[type=number] {
 }
 .guess{
 
-    color: red;
+    color:#A38FFF;
 font-size: 20px;
 
+}
+
+.chooseDraw{
+    color:#A38FFF;
+    font-size: 20px;
 }
 
 option{
@@ -60,14 +68,15 @@ option{
 h1{
 margin-top: 0px;
 padding: 10px;
-color: green;
+color:#273040;
 }
 
 h5{
     margin-top: 0px;
     padding: 10px;
-    color:orange;
-    font-size: 30px;
+    color:#273040;
+    font-size: 20px;
+
     }
 
 
@@ -80,30 +89,70 @@ h5{
 
 .refreshButt{
 
-    flex: 1;
+    flex: left;
     min-width: 10px;
     display: flex;
     flex-direction: column;
     margin-left: 50px;
-    color: crimson;
+
     font-size: 30px;
+
+}
+#timer{
+    float: right;
+
+    font-family: Josefin Slab;
+    font-size: 20px;
+    text-align: center;
+
+    margin: 10px;
+    padding: 5px 5px;
+
+
 
 }
 
 button {
-    background: rgb(212, 104, 54);
+    background: #82C1E8;
     color: #FFF;
     font-family: Josefin Slab;
     font-size: 15px;
     text-align: center;
     border: 1px solid black;
-    margin: 10px;
-    padding: 5px 5px;
     border-radius: 2px;
     box-shadow: 0.1px  black;
   }
-  
-  button:hover{
-      background: rgb(170, 221, 99);
+  .timBout{
+
+
+    margin-right: 10%;
+    margin-left: 10%;
+
   }
   
+  button:hover{
+      background: #9CBEFF;
+  }
+  
+
+
+  #pixelDraw{
+    background:white;
+
+
+  }
+
+
+  #myProgress {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    background-color: #4CAF50;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+  }

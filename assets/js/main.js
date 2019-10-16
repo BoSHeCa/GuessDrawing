@@ -1,7 +1,7 @@
 
         
  $(function () {
-
+// hides all thing
     $(".colorType").hide();
     $(".gtime1").hide();
     $("#myBar").hide();
@@ -84,12 +84,10 @@ document.getElementById('sizeDraw').onsubmit = function () {
         $('.finshDraw').click(function ( ) {
             isFinish = true
 
-                // $("#status").text("Drawing stop.");
-        // $('.space').show();
-    
-        // $('.space').hide();
+
     });
-    
+        // start button
+
         $('.spaceHide').click(function(){
             startClock()
             // Build a default 25x25 grid.
@@ -99,28 +97,13 @@ document.getElementById('sizeDraw').onsubmit = function () {
             $('.colorType').show();
             $('.guess').hide();
             $('#selectValue2').hide();
-            // $('.colorType').show();
-            // $('.colorType').show();
-
-
-            // $('#status').css("display","block");
-            // $('.chooColor').css("display","block");
-            // $('#colorDraw').css("display","block");
-            // $('.finshDraw').css("display","block");
-            // $('.finshDraw1').css("display","block");
-            // $('#pixelDraw').css("display","block");
-            // $('.guess').css("display","block");
-            // $('.chooColor').css("display","block");
-
-            // $('#colorDraw').css("text-align","center");
-
-
-            // alert('clicked')
-            // makeGrid(height, width);
 
 
         });
     });
+
+    // finsh button
+
     $('.finshDraw1').click(function(){
         pauseClock()
         // isFinish = false
@@ -137,14 +120,21 @@ document.getElementById('sizeDraw').onsubmit = function () {
         $("#myProgress").show();
 
     });
-
+// bar loading
             function move() {
           var elem = document.getElementById("myBar");   
           var width = 0;
           var id = setInterval(frame, 100);
           function frame() {
             if (width == 100) {
-                alert('You lost! ، Guess time is over');
+                Swal.fire({
+                    position: 'center',
+                    type: 'warning',
+                    title: 'You lost! ، Guess time is over',
+                    showConfirmButton: false,
+                    timer: 2500
+                  })
+                // alert('You lost! ، Guess time is over');
               clearInterval(id);
 
             }
@@ -167,58 +157,36 @@ document.getElementById('sizeDraw').onsubmit = function () {
         if (select1 !== select2) {
             //  alert('wrong');
             Swal.fire({
-                position: 'top-end',
-                type: 'success',
-                title: 'Your work has been saved',
+                position: 'center',
+                type: 'error',
+                title: 'wrong',
                 showConfirmButton: false,
-                timer: 1500
+                timer: 2500
               })
           } 
-          
           else 
           {
-  
-            alert('successfully');
+            Swal.fire({
+                position: 'center',
+                type: 'success',
+                title: 'successfully',
+                showConfirmButton: false,
+                timer: 2500
+              })
+            // alert('successfully');
 
 
           }
-        // var select1 = document.getElementById("selectValue1").value;
-        // console.log(select1);
-            // getSelect()
-
-    // function getSelect1()
-    // {
-
-    // }
-    // getSelect1();
-
-    // function getSelect2()
-    // {
-    //     console.log(select2);
-    // }
-    // getSelect2();
-// function mattt()
-//     if (){
-//         select1 == select2
-//         alert("good")
-//     }else
-//     {
-//         alert("bad") 
-//     }
-//     mattt();
 
 
     }
 
-     //refresh button
- function refreshPage(){
-    window.location.reload();
-}  
 
 
 
 
 
+// timer
 
 var timer=document.getElementById('timer');
 var i=0;
@@ -245,3 +213,9 @@ clearInterval(t);
 }
 
 function updateTime(){ }
+
+
+     //refresh button
+     function refreshPage(){
+        window.location.reload();
+    }  
