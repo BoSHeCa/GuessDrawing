@@ -19,7 +19,7 @@ sweet alert
 
 ### Wireframes
 
-I will update the part soon .
+I will update this part soon .
 
 ### User Stories
 
