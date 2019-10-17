@@ -19,7 +19,7 @@ sweet alert
 
 ### Wireframes
 
-Your step by step planning sketch of your project, that you can post them as an image in here.
+I will update the part soon .
 
 ### User Stories
 
